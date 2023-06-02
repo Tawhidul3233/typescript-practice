@@ -43,3 +43,25 @@ car3 = { name: "Tesla", model: 3030, year: 203 };
 let car4;
 car4 = { name: 'Tesla', model: 2020 };
 // console.log(car4)
+// typescript union 
+function printStatusCode(code) {
+    // console.log(`My status code is ${code}.`)
+}
+printStatusCode(404);
+printStatusCode('404');
+// TypeScript funcation 
+function data6() {
+    return '';
+}
+// paramiter and return value must number
+function data7(a, b) {
+    return a + b;
+}
+// console.log(data7(5,6))
+// optional paramiter 
+function data8(a, b, c) {
+    return `${c} get ${a + b}`;
+}
+function data10(a) {
+    return a;
+}

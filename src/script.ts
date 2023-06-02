@@ -78,3 +78,39 @@ interface carex {
 let car4 : carex;
 car4 = {name: 'Tesla', model: 2020}
 // console.log(car4)
+
+
+// typescript union 
+
+function printStatusCode(code: string | number) {
+  // console.log(`My status code is ${code}.`)
+}
+printStatusCode(404);
+printStatusCode('404');
+
+
+// TypeScript funcation 
+
+function data6 (): string {
+return ''
+}
+
+// paramiter and return value must number
+function data7 (a: number, b:number): number{
+  return a + b;
+}
+// console.log(data7(5,6))
+
+// optional paramiter 
+function data8(a:number, b:number, c?:string): string {
+  return `${c} get ${a+b}`
+}
+// data8(5,7,'Akash')
+// data8(5,7,) 3rd paramiter is optional
+
+// Type Alias
+type data9 = (value: number) => number;
+
+function data10(a:number) {
+  return a;
+}
