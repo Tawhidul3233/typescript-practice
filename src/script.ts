@@ -29,7 +29,21 @@ a= 66;
 a= {name: 'akash', id: 66};
 a= ['c', 't'];
 a= undefined;
-a = null,
-a = true,
+a = null;
+a = true;
 // if type any we can assign any type of value
 
+
+// now typescript tuple
+
+let data2: [number, boolean, string];
+// data2= [55, 'akash', true] need to assign correct order
+data2 = [55, true, 'akash']
+// console.log(data2)
+
+
+// optional proparties
+
+let data3 : {name: string, id: number, url?: string};
+data3= {name: 'akash', id: 55};
+// console.log(data3)
