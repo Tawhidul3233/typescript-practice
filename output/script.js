@@ -65,3 +65,27 @@ function data8(a, b, c) {
 function data10(a) {
     return a;
 }
+// TypeScript class
+class Person {
+    constructor(useName, age) {
+        this.useName = useName,
+            this.age = age;
+    }
+    display() {
+        // console.log(`I am  ${this.useName} and ${this.age} years old`)
+    }
+}
+const user1 = new Person('Akash', 22);
+// console.log(user1.display())
+class CreateCar {
+    constructor(carName, model, carOld) {
+        this.carName = carName,
+            this.model = model,
+            this.carOld = carOld;
+    }
+    display() {
+        console.log(`This is  ${this.carName} and model is ${this.model} `);
+    }
+}
+const car1 = new CreateCar('Tesla', 2022, false);
+// car1.display()

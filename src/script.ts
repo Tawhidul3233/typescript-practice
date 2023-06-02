@@ -114,3 +114,47 @@ type data9 = (value: number) => number;
 function data10(a:number) {
   return a;
 }
+
+
+
+// TypeScript class
+
+class Person {
+  useName: string;
+  age: number
+
+  constructor(useName: string, age: number){
+    this.useName = useName,
+    this.age = age
+  }
+
+  display(){
+    // console.log(`I am  ${this.useName} and ${this.age} years old`)
+  }
+
+}
+
+const user1 = new Person('Akash', 22)
+// console.log(user1.display())
+
+
+
+class CreateCar {
+  private carName: string;
+  protected model: number | string;
+  public carOld: boolean;
+
+  constructor(carName: string, model: number | string, carOld: boolean){
+    this.carName = carName,
+    this.model = model,
+    this.carOld = carOld
+  }
+
+  private display(){
+    console.log(`This is  ${this.carName} and model is ${this.model} `)
+  }
+
+}
+
+const car1 = new CreateCar('Tesla', 2022, false)
+// car1.display()
