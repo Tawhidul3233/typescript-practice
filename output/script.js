@@ -36,4 +36,10 @@ data2 = [55, true, 'akash'];
 // optional proparties
 let data3;
 data3 = { name: 'akash', id: 55 };
-// console.log(data3)
+let car2;
+car2 = { name: 'Tesla', model: 're3', buy: 2020, new: false };
+let car3;
+car3 = { name: "Tesla", model: 3030, year: 203 };
+let car4;
+car4 = { name: 'Tesla', model: 2020 };
+// console.log(car4)

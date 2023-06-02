@@ -47,3 +47,34 @@ data2 = [55, true, 'akash']
 let data3 : {name: string, id: number, url?: string};
 data3= {name: 'akash', id: 55};
 // console.log(data3)
+
+
+// ypeScript Type Aliases and Interfaces
+type displayName = string;
+type model = string;
+type year = number;
+type newCar = boolean;
+
+let car2 : {name: displayName, model: model, buy: year, new: newCar};
+car2 = {name: 'Tesla', model: 're3', buy: 2020, new: false}
+// console.log(car2)
+
+
+type car =  {
+  name: string,
+  model: string | number,
+  year : number
+}
+
+let car3 : car ;
+car3 = {name: "Tesla", model: 3030, year: 203}
+// console.log(car3)
+
+interface carex {
+  name: string,
+  model : number | string
+}
+
+let car4 : carex;
+car4 = {name: 'Tesla', model: 2020}
+// console.log(car4)
